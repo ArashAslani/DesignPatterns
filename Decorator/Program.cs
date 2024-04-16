@@ -1,5 +1,7 @@
 ﻿using Decorator.DecoratorFromUML;
 using Decorator.SimpleDecorator;
+using Decorator.WebClientDownloadStringDecorator;
+using System.Net;
 
 namespace Decorator
 {
@@ -18,6 +20,15 @@ namespace Decorator
             SendEmailDecorator sendEmailDecorator = new(sendEmail);
             sendEmailDecorator.Send();
             #endregion
+
+            #region WebClient DownloadString Decorator
+            WebClient webClient = new();
+            WebClientDecorator webClientDecorator = new(webClient);
+            var source = webClientDecorator.DownloadString("https://youtube.com/");
+            var result = source == string.Empty ? string.Empty : "Don";
+            Console.WriteLine(result);
+            #endregion
+
         }
     }
 }
