@@ -22,13 +22,12 @@ namespace Decorator
             #endregion
 
             #region WebClient DownloadString Decorator
-            WebClient webClient = new();
-            WebClientDecorator webClientDecorator = new(webClient);
-            var source = webClientDecorator.DownloadString("https://youtube.com/");
+            HttpClient httpClient = new();
+            HttpClientDecorator httpClientDecorator = new(httpClient);
+            var source = httpClientDecorator.GetStringAsync("https://google.com/").Result;
             var result = source == string.Empty ? string.Empty : "Don";
             Console.WriteLine(result);
             #endregion
-
         }
     }
 }
