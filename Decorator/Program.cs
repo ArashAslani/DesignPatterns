@@ -13,14 +13,19 @@ namespace Decorator
             ConcreteComponent concreteComponent = new();
             ConcreteDecorator concreteDecorator = new(concreteComponent);
             concreteDecorator.Operation();
+            Console.WriteLine("//////");
+            ConcreteDecoratorTow concreteDecoratorTow = new(concreteDecorator);
+            concreteDecoratorTow.Operation();
             #endregion
 
+            Console.WriteLine("//////");
             #region Simple Decorator
             SendEmail sendEmail = new();
             SendEmailDecorator sendEmailDecorator = new(sendEmail);
             sendEmailDecorator.Send();
             #endregion
 
+            Console.WriteLine("//////");
             #region WebClient DownloadString Decorator
             HttpClient httpClient = new();
             HttpClientDecorator httpClientDecorator = new(httpClient);
@@ -29,6 +34,7 @@ namespace Decorator
             Console.WriteLine(result);
             #endregion
 
+            Console.WriteLine("//////");
             #region Inheritance Decorator Simulation
 
             //Window window = new();
