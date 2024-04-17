@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using System.Net;
 
-namespace Decorator.WebClientDownloadStringDecorator;
+namespace Decorator.HttpClientDownloadStringDecorator;
 
 public class HttpClientDecorator : HttpClient
 {

@@ -1,7 +1,6 @@
 ﻿using Decorator.DecoratorFromUML;
+using Decorator.HttpClientDownloadStringDecorator;
 using Decorator.SimpleDecorator;
-using Decorator.WebClientDownloadStringDecorator;
-using System.Net;
 
 namespace Decorator
 {
