@@ -1,5 +1,6 @@
 ﻿using Decorator.DecoratorFromUML;
-using Decorator.HttpClientDownloadStringDecorator;
+using Decorator.HttpClientGetStringDecorator;
+using Decorator.InheritanceDecoratorSimulation;
 using Decorator.SimpleDecorator;
 
 namespace Decorator
@@ -26,6 +27,15 @@ namespace Decorator
             var source = httpClientDecorator.GetStringAsync("https://google.com/").Result;
             var result = source == string.Empty ? string.Empty : "Don";
             Console.WriteLine(result);
+            #endregion
+
+            #region Inheritance Decorator Simulation
+
+            //Window window = new();
+            //ShadowWindow shadowWindow = new();
+            //ShadowGlassWindow glassWindow = new(); ;
+            BorderShadowGlassWindow borderShadowGlassWindow = new();
+            //Too many subclass you need!
             #endregion
         }
     }
