@@ -15,5 +15,7 @@ public class FacadeService
         class1.Action1();
         class2.Action2();
         class3.Action3(); 
+
+        class1.StopAction();
     }
 }
