@@ -1,0 +1,6 @@
+@Facade_Asp.Net_Core_HostAddress = http://localhost:5195
+
+GET {{Facade_Asp.Net_Core_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
