@@ -18,7 +18,6 @@ namespace Facade_Asp.Net_Core
             builder.Services.AddSwaggerGen();
 
 
-
             builder.Services.AddSingleton<IFacadeService, FacadeService>();
 
 

@@ -1,4 +1,4 @@
-﻿namespace Facade.Package1;
+﻿namespace Facade.FacadeFromUML.Package1;
 
 public class Class1
 {

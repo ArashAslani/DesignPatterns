@@ -1,6 +1,6 @@
-﻿using Facade.Package1;
-using Facade.Package2;
-using Facade.Package3;
+﻿using Facade.FacadeFromUML.Package1;
+using Facade.FacadeFromUML.Package2;
+using Facade.FacadeFromUML.Package3;
 
 namespace Facade.Facade;
 
